@@ -1,5 +1,5 @@
 # IBM-Project-4372-1658730006
-# A Novel Method for Handwritten Digit Recognition System![image](https://user-images.githubusercontent.com/64357406/202528756-a8d6688e-09d8-47be-a656-17125ee434d0.png)
+# A Novel Method for Handwritten Digit Recognition System
 
 
 ## Category: 
