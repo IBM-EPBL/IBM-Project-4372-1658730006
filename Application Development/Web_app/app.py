@@ -9,11 +9,11 @@ from flask import send_from_directory
 from keras.utils import img_to_array
 import cv2
 
-UPLOAD_FOLDER = 'C:/College/Semesters/7th sem/IBM Project Works/Data'
+UPLOAD_FOLDER = 'C:/Users/DELL/Downloads/'
 app=Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-model=load_model(".venv/assets/mnistCNN.h5")
+model=load_model("assets/mnistCNN.h5")
 
 @app.route("/")
 def homepage():
