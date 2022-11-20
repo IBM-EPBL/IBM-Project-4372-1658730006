@@ -23,5 +23,5 @@ Handwriting recognition is one of the compelling research works going on because
 - RITHISH A
 - SRIKANTH
 - ARAVIND J
-##YOUTUBE VIDEO
+## YOUTUBE VIDEO
 https://www.youtube.com/watch?v=FpgdpiUeq1g
