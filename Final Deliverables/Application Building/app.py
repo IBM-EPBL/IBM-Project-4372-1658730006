@@ -32,7 +32,7 @@ def upload():
         img = Image.open(upload_img).convert("L")  # convert image to monochrome
         img=np.asarray(img)
         img=cv2.resize(img,(28,28),interpolation=cv2.INTER_LINEAR)
-        thresh,bw_image=cv2.threshold(img,127,255,cv2.THRESH_BINARY)   #converting grayscale to binary image 
+        thresh,bw_image=cv2.threshold(img,127,255,cv2.THRESH_BINARY)   #converting grayscale to binary image
         bw_image=255-bw_image
         bw_image=img_to_array(bw_image)
         bw_image=np.asarray(bw_image)
@@ -42,8 +42,10 @@ def upload():
         num = np.argmax(pred, axis=1)  # printing our Labels
 
         return render_template('predict.html', num=str(num[0]))
+    else:
+        return redirect("/")
+
 
 
 if __name__=="__main__":
-    app.run()
-
+    app.run("localhost",5000,debug=True)
